@@ -1,0 +1,34 @@
+DATA TYPES:
+1)Dynamic type languages:
+Two types:
+1)	Primitive data type
+2)	Non-primitive data type: objects,array
+
+TO CHECK THE DATA TYPE – TYPEOF:
+1)Primitive data type: predefined ; we can store single values.
+Numbers: interger,floats
+2)string : steam of characters enclosed in quotes
+---Single,double,backtick quotes ;
+3)Boolean : true or false
+4)Null : empty value or no value
+5)undefined : ----declared variables with no value.
+
+2)String: Steam of characters enclosed in quotes.
+---single and double quotes works same.
+#leetcode
+#hackerrank
+#codechef
+#Written Test in mncs
+#Techincal interviews
+#Conditional statements: only once  #1-10
+#loops :
+
+CONDITIONAL STATEMENTS:
+--- To make the set instructions execute only when the conditional is true.
+BLOCK OF CODE ( CONDITIONAL BLOCK) :Set of instructions
+---When this block of code will execute it will execute when the specific conditions is true.
+Indentation : {
+                           ----block of code
+                               }
+If:  only possible
+elseif: #
