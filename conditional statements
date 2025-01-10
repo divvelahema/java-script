@@ -1,0 +1,30 @@
+// let numnber=parseInt(prompt("enter a number"))
+        // if (Number %2==0 && Number %3==0){
+        //     document.write("number is divisible by 2 and 3 both")
+        // }else{
+        //     document.write("it is not divisible by 2 and 3 and both")
+        // }  
+        // let a = parseInt(prompt("enter a :"));
+        // let b = parseInt(prompt("enter b :"));
+        // let c = parseInt(prompt("enter c :"));
+        // if (a>b && a>c) {
+        //     document.write(`${a} is largest number`);
+        // } else if (b > a && b > c) {
+        //     document.write(`${b} is largest number`);
+        // } else {
+        //     document.write(`largest number is ${c}`);
+        // } 
+
+        // WORKING DAYS ABSENT  DAYS/WORKING *100.
+        //  let W = parseInt(prompt("enter number of working day: "));
+        //  let A = parseInt(prompt("enter number of absent for : "));
+        //  let p=W-A
+        //  let AP=(P/W)*100;
+        //  if (AP>=75){
+        //     document.write("eligible")
+        //  }else{
+        //     document.write("not eligible");
+        //  }       
+    </script>
+</body>
+</html>
