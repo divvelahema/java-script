@@ -1,0 +1,50 @@
+sychromous callback with settimeout in javascript:
+
+console.log('Start of program');
+        setTimeout(() => {
+            console.log('This runs after 2 seconds');
+        }, 2000);
+        console.log('End of program')
+
+
+function greet(name,callback){
+            console.log("hello"+name);
+            callback();
+          }
+          function goodbye(){
+            console.log("Goodbye!")
+          }
+          greet("cherry",goodbye);
+
+
+function fetchData(callback){
+    console.log("Fetching data....")
+    setTimeout(function(){
+        console.log("Data fetched");
+        callback();
+    },2000);
+}
+function processData(){
+    console.log("processing the fetched data...")
+}
+fetchData(processData);
+Call back functions :
+
+You can pass the callback function as an argument to another function.
+
+ Execution : the function receiving the callback will execute the call back at same point during execution (often at the end or after an asynchronous operations  is done ).
+Example :
+          Function mainfunction(callback){
+         Console.log(“callback function executed”)
+         }
+        Mainfunction(callbackfunction);
+
+Exp :
+  Mainfunction takes a parameters callback
+Callback function is passed as an arguments to mainfunction inside 
+
+Output :
+          Mainfunction(call back function);
+Exp : we didn’t pass a named function like (goodbye) ;
+
+
