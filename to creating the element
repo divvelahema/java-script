@@ -1,0 +1,77 @@
+DOM :
+----Get element bt id ,class ,tag
+----Queryselector methods
+----To create a element by using js :
+1)	1.Single element
+2)	2.Multiple element
+
+EX : let title
+For(let i=0; i<3 ;i++){
+Title=document.createElement(‘h2’)
+Title.className=”tt”
+Title.textcontext=i
+Console.log(title)
+}
+
+EX 1:
+To create multiple element :
+Const titles =[“hema” ,”sunny”, “sai”]
+For(let i=0;i<titles.length ;i++){
+Let title=document.createElement(‘h1’)
+Title.className=’a’
+Title.textcontext =titles[i]
+Console.log(title)
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>removing child node</h1>
+<h2>iam Hema</h2>
+<ul>
+<li>sunny</li>
+<li>phani</li>
+<li>j</li>
+</ul>
+
+<script>
+const ul = document.querySelector('ul')
+const lists = document.querySelectorAll('li')
+for(const list of lists){
+console.log(Removing:${list.textContent})
+ul.removeChild(list)
+}
+</script>
+    
+</body>
+</html>
+
+To append a new element :
+Append() -To append a new element to parent node
+<div id=”a”>
+<h1>Hema</h1>
+<h1>sunny</h1>
+<div>
+
+
+Let n=document.createElement(“h2”)
+n.textcontext=”Hema” is the team lead”
+
+//get the parent element
+Let p=document.getelementbyid(“b”)
+Console.log(p.innertext) 
+
+//append the new element to the parent node
+p.appendchild(n)
+
+//log the inner text of the parent
+Console.log(p)
+Console.log(p.innerText)
+ 
+
