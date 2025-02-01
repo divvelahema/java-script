@@ -1,0 +1,43 @@
+) let age = prompt("Enter the age");
+let citizen = prompt("Enter the citizenship");
+let cTest = prompt("Citizenship result");
+
+if((age >= 18) && (citizen=="Indian"||cTest =="Passed")){
+    document.write("Can eligible for voting");
+}
+else{
+    document.write("Cannot vote");
+}
+
+
+2)   let discountCode = "SAVE10"; 
+let totalAmount = 100;  
+
+if (discountCode === "SAVE10") {
+  totalAmount -= totalAmount *0.01
+  console.log("Discount applied: 10%");
+} else if (discountCode === "SAVE20") {
+  totalAmount -= totalAmount * 0.20; 
+  console.log("Discount applied: 20%");
+} else if (discountCode === "WELCOME") {
+  totalAmount -= totalAmount * 0.15;
+  console.log("Discount applied: 15%");
+} else {
+  console.log("Invalid discount code");
+}
+
+
+console.log("Total after discount: $" + totalAmount.toFixed(2));
+1)	Variables
+Let, var, const ;
+Let – local scope
+Var – global scope
+Const – local scope
+2)	Operators
+3)	Conditional statements
+4)	Loops
+5)	Functions
+6)	Promise
+
+Javascript
+React-js
