@@ -1,0 +1,30 @@
+<script>
+       
+        const e=React.createElement(
+            'h1' ,{id:'a'},"I am sai"
+        )
+        const element=document.getElementById("app")
+        const root=ReactDOM.createRoot(element)
+        root.render(e)
+    </script> -->
+
+<div id="app"></div>
+    <script type="text/babel">
+        const element = <h1 className="a">Hello, JSX!</h1>;
+        const root = ReactDOM.createRoot(document.getElementById('app'));
+        root.render(element);
+    </script>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+CONDITIONAL RENDERING :
+<div id="app"></div>
+    <script type="text/babel">
+         const n = parseInt(prompt("enter the n"));
+         const m =<h1>React is {n*2} better than react js </h1>
+
+        const root = ReactDOM.createRoot(document.getElementById('app'));
+        root.render(m);
+ 
