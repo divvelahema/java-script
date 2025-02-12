@@ -1,0 +1,37 @@
+React memo : --- it is a HOC (high  order components ) is not a react hook.
+---it will stop unneccesary 
+import React from "react";
+const Childa=()=>{
+    console.log("Child A rendered")
+    return <h2>This is a Child A</h2>
+};
+export default Childa;
+
+import {memo} from 'react';
+const Childb=({count,increment})=>{
+    console.log("Child B rendered")
+    return(
+        <div>
+        <h2>Count:{count}</h2>
+        <button onClick ={()=>increment()}> Increment</button>
+        </div>
+    )
+};
+export default memo(Childb);
+
+import React ,{useState} from "react";
+import Childa from './Childa';
+import Childb from './Childb';
+const Parent =()=>{
+  const[count, setCount] = useState(0);
+  const increment =()=>{
+    setCount(c=>c+1);
+  };
+  return(
+    <div>
+      <Childa></Childa>
+      <Childb count ={count} increment={increment}></Childb>
+    </div>
+  );
+}
+export default Parent;
