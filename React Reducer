@@ -1,0 +1,57 @@
+React Hooks
+React Reducer():
+Cllback()
+React Reducer();
+A reducer is a function that helps to update(like score ,a list) based on action we take
+1)current State : The current value of a state
+2)Action :
+Example:
+Action : add or remove an item
+State: initial value (3 items) #3-apples
+--Tracking.
+1) import React,{useReducer} from 'react';
+
+// reducer funtion to track no of apples
+function appleReduce(state=3,action){
+  switch(action.type){
+    case 'ADD_APPLE':
+      return state+1;
+
+      case'EAT_APPLE':
+      return state-1;
+
+      default:
+        return state;
+  }
+}
+
+function App(){
+  const [state, dispatch]=useReducer(appleReduce)
+  return(
+    <div>
+      <h1>Apple COunter</h1>
+      <p> Number of apples:{state}</p>
+
+      <button onClick= {()=>dispatch({type:'ADD_APPLE'})}>ADD APPLE</button>
+      <button onClick= {()=>dispatch({type:'EAT_APPLE'})}>EAT APPLE</button>
+    </div>
+  )
+}
+export default App;
+
+function App(){
+  const [state, dispatch]=useReducer(appleReduce)
+  return(
+    <div style={{padding:'20px'}}>
+      <h1 style={{color:"blue", textAlign:'center'}}>Apple Counter</h1>
+      <p style={{color:"blue",textAlign:"center"}}> Number of apples:{state}</p>
+
+      <button onClick= {()=>dispatch({type:'ADD_APPLE'})} style={{color:'yellowgreen',textAlign:"center"}}>ADD APPLE</button>
+      <button onClick= {()=>dispatch({type:'EAT_APPLE'})}>EAT APPLE</button>
+    </div>
+  )
+}
+export default App;
+
+
+ 
