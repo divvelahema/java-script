@@ -1,0 +1,66 @@
+Flex:
+1.it is one directional
+2.flexiblel and easy to work
+Limited tools
+It is by default a responsive web page
+
+
+Grid:
+It is two dimensional/directional
+Complex but very useful
+Advanced tools
+We can make grid responsive by using some tools
+Display grid:
+It defines the grid container
+2.Grid template rows:it specifies how many rows that a web page contain and how much space each web page occupies
+3.grid template columns:it specifies that how many columns the web page contain and how much space each web page occupies
+4.Grid-rows:specifies the start and the end of the particular row
+5.grid-columns:specifies the start and end of each column
+<style>
+        .parent{
+            height: 100px;
+
+        }
+        .header{
+            background-color: blue;
+
+        }
+        .aside{
+            background-color: blueviolet;
+
+        }
+        .main{
+            background-color: brown;
+
+        }
+        .rightmenu{
+            background-color: aqua;
+
+        }
+        .footer{
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child c1">1</div>
+        <div class="header">2</div>
+        <div class="aside">3</div>
+        <div class="main">4</div>
+        <div class="rightmenu">5</div>
+        <div class="footer">6</div>
+
+        <!-- <div class="child c1">1</div>
+        <div class="child c2">2</div>
+        <div class="child c3">3</div>
+
+        <div class="child c1">1</div>
+        <div class="child c2">2</div>
+        <div class="child c3">3</div> -->
+    </div>
+
+
+
+
