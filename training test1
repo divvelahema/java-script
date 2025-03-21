@@ -1,0 +1,54 @@
+ show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| ecommdb            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.25 sec)
+
+mysql> create database student;
+Query OK, 1 row affected (0.05 sec)
+
+mysql> use student;
+Database changed
+mysql> create table student(id int,sname varchar(20),email varchar(200),branch varchar(20),moblieno int);
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> create table student(id int,sname varchar(20),email varchar(200),branch varchar(20),mobileno varchar(200));
+ERROR 1050 (42S01): Table 'student' already exists
+mysql> create table student1(id int,sname varchar(20),email varchar(200),branch varchar(20),mobileno varchar(200));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> insert into student1 values(1,'hema','divvelahema345@gmail.com','cse',"8688792119");
+Query OK, 1 row affected (0.02 sec)
+
+mysql>  insert into student1 values(2,'sunny','sunny123@gmail.com','aiml',"9688792198");
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  insert into student1 values(3,'yamini','yamini143@gmail.com','ds',"8588792180");
+Query OK, 1 row affected (0.02 sec)
+
+mysql>  insert into student1 values(4,'sanjana','sanjana118@gmail.com','it',"8658772190");
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  insert into student1 values(5,'hanmitha','hanmitha105@gmail.com','iot',"8687792176");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table' at line 1
+mysql> select * from student1;
++------+----------+--------------------------+--------+------------+
+| id   | sname    | email                    | branch | mobileno   |
++------+----------+--------------------------+--------+------------+
+|    1 | hema     | divvelahema345@gmail.com | cse    | 8688792119 |
+|    2 | sunny    | sunny123@gmail.com       | aiml   | 9688792198 |
+|    3 | yamini   | yamini143@gmail.com      | ds     | 8588792180 |
+|    4 | sanjana  | sanjana118@gmail.com     | it     | 8658772190 |
+|    5 | hanmitha | hanmitha105@gmail.com    | iot    | 8687792176 |
++------+----------+--------------------------+--------+------------+
+5 rows in set (0.01 sec)
